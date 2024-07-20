@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contain">
+        <div class="calculator">
+            <input type="text" name="display" value="0" onchange="displayChangedValue()" id="display">
+            <label id="output" class="output"></label>
+        </div>
+
+        <div class="cal">
+            <input type="button" value="AC" onclick="clearInfo('*')">
+            <input type="button" value="C" onclick="removeLastInfo()">
+            <input type="button" value="%" onclick="getButtonClickedValue('%')">
+            <input type="button" value="/" onclick="getButtonClickedValue('/')">
+        </div>
+        <div class="cal">
+            <input type="button" value="7"  onclick="getButtonClickedValue(7)">
+            <input type="button" value="8" onclick="getButtonClickedValue(8)">
+            <input type="button" value="9" onclick="getButtonClickedValue(9)">
+            <input type="button" value="*" onclick="getButtonClickedValue('*')">
+        </div>
+        <div class="cal">
+            <input type="button" value="4" onclick="getButtonClickedValue(4)">
+            <input type="button" value="5" onclick="getButtonClickedValue(5)">
+            <input type="button" value="6" onclick="getButtonClickedValue(6)">
+            <input type="button" value="-" onclick="getButtonClickedValue('-')">
+        </div>
+        <div class="cal">
+            <input type="button" value="1" onclick="getButtonClickedValue(1)">
+            <input type="button" value="2" onclick="getButtonClickedValue(2)">
+            <input type="button" value="3" onclick="getButtonClickedValue(3)">
+            <input type="button" value="+" onclick="getButtonClickedValue('+')">
+        </div>
+        <div class="cal">
+            <input type="button" value="00" onclick="getButtonClickedValue('00')">
+            <input type="button" value="0" onclick="getButtonClickedValue(0)">
+            <input type="button" value="." onclick="getButtonClickedValue('.')">
+            <input type="button" value="=" onclick="getCalculatedValue()">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

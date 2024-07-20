@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/free-photo/calculator-colorful-paper-clips_23-2148475323.jpg?w=1060&t=st=1720613428~exp=1720614028~hmac=f615a839910c6851d0a57e3869bd6227e5f4c2b7e2fc37cf65042de94c37db28);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contain{
+    height: auto;
+    width: auto;
+    background: rgba(29, 173, 230, 0.423);
+    box-shadow: 5px 5px #cbced0;
+}
+.calculator{
+    position: relative;
+}
+.cal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.calculator input{
+    border: 0;
+    outline: 0;
+    width: 93%;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 15px;
+    box-shadow: -8px -8px 15px rgba(200, 200, 200, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+}
+
+.cal input{
+    border: 0;
+    outline: 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 13px;
+    box-shadow: -8px -8px 15px rgba(200, 200, 200, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+}
+.output{
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    font-size: 20px;
+}
+/* @media (max-width: 780px) {
+    .contain {
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .calculator input {
+        height: 12%;
+        font-size: 6vw;
+    }
+
+    .cal input {
+        height: 12vh;
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .contain {
+        height: 85vh;
+        width: 95vw;
+    }
+
+    .calculator input {
+        height: 14%;
+        font-size: 7vw;
+    }
+
+    .cal input {
+        height: 14vh;
+        font-size: 7vw;
+    }
+} */
